@@ -1,39 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal dos Tênis</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
-        header { background-color: #333; color: white; padding: 1rem; text-align: center; }
-        main { padding: 2rem; }
-        h1 { color: #333; text-align: center; }
-        .shoe { margin-bottom: 2rem; padding: 1rem; border: 1px solid #ddd; border-radius: 5px; background-color: white; }
-        .shoe img { width: 100%; max-width: 300px; display: block; margin: 0 auto; }
-        .shoe h2 { color: #555; text-align: center; }
-        footer { background-color: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .shoe {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .shoe img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .shoe h2 {
+            color: #555;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .produtos {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .produtos h1 {
+            color: #ffffff;
+        }
+
+        .grid {
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .item {
+            position: relative;
+            background-color: #dddddd;
+            color: #000000;
+            border: 1px solid #000000;
+            border-radius: 1em;
+            margin: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .imagem-produto {
+            position: relative;
+            width: 80%;
+            height: 80%;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>storm</h1>
-        <p> loja de tenis</p>
+        <h1>Portal dos Tênis</h1>
+        <p>Explorando o mundo dos tênis esportivos e casuais</p>
     </header>
-    <main>
-        <section class="shoe">
-            <img src="https://example.com/imagem1.jpg" alt="Tênis Esportivo">
-            <h2>Modelo Esportivo XYZ</h2>
-            <p>Ideal para corridas e treinos intensos, com suporte e amortecimento.</p>
-        </section>
-        <section class="shoe">
-            <img src="https://example.com/imagem2.jpg" alt="Tênis Casual">
-            <h2>Modelo Casual ABC</h2>
-            <p>Estiloso e confortável para o dia a dia.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Portal dos Tênis - Todos os direitos reservados</p>
-    </footer>
+
+    <div class="produtos">
+        <h1>Nossos Produtos</h1>
+        <div class="grid">
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
